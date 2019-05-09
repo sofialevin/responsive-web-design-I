@@ -202,7 +202,15 @@ footer {
   header nav {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 41px;
+    padding-top: 5px;
+  }
+
+  header nav a {
+    margin-right: 0;
+    font-size: 16px;
   }
 
   header .logo {
@@ -216,8 +224,14 @@ footer {
   }
 
   .cta .cta-text {
-    font-size: 73px;
-    margin-top: 80px;
+    font-size: 72px;
+    margin-top: 72px;
+}
+
+  .cta .cta-text button {
+    font-size: 16px;
+    padding: 6px 42px;
+    margin-top: 10px;
   }
 
   .main-content {
@@ -282,13 +296,6 @@ footer {
 
   .cta .cta-text {
     margin-top: 50px;
-    font-size: 72px;
-}
-
-.cta .cta-text button {
-  font-size: 16px;
-  padding: 6px 42px;
-  margin-top: 10px;
 }
 
 .main-content {
