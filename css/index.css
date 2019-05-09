@@ -203,9 +203,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 41px;
-    padding-top: 5px;
+    padding: 5px 41px 5px 10px;
+    margin-bottom: 22px;
   }
 
   header nav a {
@@ -214,40 +213,7 @@ footer {
   }
 
   header .logo {
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-
-  .cta {
-    display: flex;
-    justify-content: center;
-  }
-
-  .cta .cta-text {
-    font-size: 72px;
-    margin-top: 72px;
-}
-
-  .cta .cta-text button {
-    font-size: 16px;
-    padding: 6px 42px;
-    margin-top: 10px;
-  }
-
-  .main-content {
-    margin-top: 46px;
-  }
-
-  .main-content .top-content {
-    display: flex;
-  }
-
-  .main-content .top-content .text-content {
-    margin-right: 32px;
-}
-
-  .main-content .bottom-content {
-    display: flex;
+    margin: 30px auto 0;
   }
 
   .cta img {
@@ -255,13 +221,79 @@ footer {
     margin: 0 auto;
   }
 
-  .middle-img {
+   .cta {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+  }
+
+  .cta .cta-text {
+    font-size: 72px;
+    margin-top: 0;
+  }
+
+ .cta .cta-text button {
+    font-size: 16px;
+    padding: 6px 42px;
+    margin-top: 10px;
+  }
+
+  .main-content {
+    margin: 45px auto 35px;
+    padding-top: 5%;
+  }
+
+  .main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .main-content .top-content .text-content {
+    width: 48%;
+    margin-right: 0;
+    padding-right: 5px;
+}
+
+.text-content p {
+  line-height: 115%;
+}
+
+
+  .main-content .bottom-content {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+    padding: 0 20px 0 5px;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 31%;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+  .main-content .middle-img {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
+  }
+
+  .contact {
+    margin-top: 0px;
+    padding-top: 36px;
+  } 
+
+  .contact p{
+    margin: 15px 0;
+  }
+
+  footer p {
+    font-size: 114%;
+    padding: 1%;
   }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .container {
     padding: 0;
   }
@@ -333,4 +365,4 @@ footer {
 .main-content .middle-img {
   margin-top: 26px;
 }
-}
+} */
