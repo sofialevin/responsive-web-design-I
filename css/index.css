@@ -1,3 +1,383 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 41px 5px 10px;
+    margin-bottom: 22px;
+  }
+
+  header nav a {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  header .logo {
+    margin: 30px auto 0;
+  }
+
+  .cta img {
+    display: none;
+    margin: 0 auto;
+  }
+
+   .cta {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+  }
+
+  .cta .cta-text {
+    font-size: 72px;
+    margin-top: 0;
+  }
+
+ .cta .cta-text button {
+    font-size: 16px;
+    padding: 6px 42px;
+    margin-top: 10px;
+  }
+
+  .main-content {
+    margin: 45px auto 35px;
+    padding-top: 5%;
+  }
+
+  .main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .main-content .top-content .text-content {
+    width: 48%;
+    margin-right: 0;
+    padding-right: 5px;
+}
+
+.text-content p {
+  line-height: 115%;
+}
+  .main-content .bottom-content {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+    padding: 0 20px 0 5px;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 31%;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+  .main-content .middle-img {
+    max-width: 100%;
+    margin: 30px auto;
+  }
+
+  .contact {
+    margin-top: 0px;
+    padding-top: 36px;
+  } 
+
+  .contact p{
+    margin: 15px 0;
+  }
+
+  footer p {
+    font-size: 114%;
+    padding: 1%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+
+  header nav {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a {
+    margin-right: 0;
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  header nav a:last-of-type {
+    border-bottom: 1px solid black;
+  }
+
+  header .logo {
+    margin-top: 20px;
+  }
+  
+  .cta {
+    margin: 45px;
+  }
+
+  .cta .cta-text {
+  margin-top: 5px;
+}
+
+.main-content {
+  border-top: 2px solid black;
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.main-content .top-content {
+  padding: 0;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.main-content .bottom-content {
+  padding: 0;
+  margin-top: 0px;
+  flex-wrap: wrap;
+}
+
+.main-content .top-content .text-content {
+  width: 100%;
+  margin: 22px 0;
+}
+
+.main-content .bottom-content .text-content {
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.main-content .bottom-content .text-content:last-of-type {
+  margin-bottom: 33px;
+}
+
+.text-content p {
+  line-height: 1.2;
+}
+
+.main-content .middle-img {
+  margin-top: 26px;
+}
+
+.contact {
+  border: none;
+  padding-left: 20px;
+}
+
+footer {
+  margin-top: 35px;
+}
+}
